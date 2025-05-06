@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CityNest</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles/footer.css">
+        <link rel="stylesheet" href="styles/styles.css">
+        <link rel="stylesheet" href="styles/contactus.css">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+        
+
+        
+    
+    </head>
+
+    <body>
+        <!------------------- NAVIGATION ------------------->
+        <div id="header-placeholder"></div>
+
+        <script>
+        // to include the header   
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-placeholder').innerHTML = data;
+            });   
+        </script>
+
+        <br>
+        <center><h1>Contact Us</h1>
+        <br>
+        <section id="contactw">
+            <div class="container-contact">            
+                <div class="methods">
+                    <i id="icon" class="fa fa-home fa-4x"></i>
+                    <h2>Visit Us</h2>
+                    <p>Kothalawala,<br> Malabe</p>
+                </div>
+                <div class="methods">
+                    <i class="fa fa-phone fa-4x"></i>
+                    <h2>Call Us</h2>
+                    <p>011-0102030<br>077-0102030</p>
+                </div>
+                <div class="methods">
+                    <i class="fa fa-envelope fa-4x"></i>
+                    <h2>E-mail Us</h2>
+                    <p>citynest@gmail.com</p>
+                </div>
+                <div class="methods">
+                    <i class="fa fa-file-text fa-4x"></i>
+                    <h2>Fill the Form</h2>
+                    <a href="#forum"><button>Fill the Form</button></a>
+                </div>
+            </div>
+
+        </section></center>
+        
+        
+        
+
+
+        <!-- Map 2 -->
+        <section id="forum">
+        <div class="contact-container">
+            <div class="contact-box">
+                <div class="left">
+                    <div class="left-forum">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.888855073993!2d79.95244007486083!3d6.903892793095456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2572db062437f%3A0xbba120ccc6fe1e2e!2sMalabe%20Junction!5e0!3m2!1sen!2slk!4v1685903233825!5m2!1sen!2slk"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+
+                    </div>
+                    
+                </div>
+                <div class="forum">
+                    <div class="inquiryform">
+                        <h2>Fill The Form</h2>
+                        <form action="inqform.php" method="POST">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+        
+                            <label for="email">E-mail</label>
+                            <input type="text" id="email" name="email" required>
+        
+                            <label for="contactno">Contact Number</label>
+                            <input type="text" id="contactno" name="contactno" required>
+        
+                            <label for="message">Message</label>
+                            <textarea id="textarea" name="message" placeholder="Type here..." rows="3" required></textarea>
+        
+                            <button class="btn" type="submit">Submit</button>
+                        </form>
+                    </div>
+
+                </div>
+                
+
+            </div>
+
+        </div>
+        </section>
+
+
+
+        <!------------------- FOOTER ------------------->        
+        <div id="footer-placeholder"></div>
+
+        <script>
+            // to include the header   
+            fetch('footer.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('footer-placeholder').innerHTML = data;
+            });   
+        </script>
+
+        
+    </body>
+</html>

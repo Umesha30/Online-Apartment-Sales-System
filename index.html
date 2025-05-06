@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CityNest</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles/footer.css">
+        <link rel="stylesheet" href="styles/index.css">
+        <!-- <link rel="stylesheet" href="styles/styles.css"> -->
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+        <link rel="icon" href="./images/icon1.png" type="image/x-icon">
+        
+    </head>
+    
+    <body>
+        <!------------------- NAVIGATION ------------------->        
+        <div id="header-placeholder"></div>
+
+        <script>
+            // to include the header   
+            fetch('header.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('header-placeholder').innerHTML = data;
+                });   
+        </script>
+
+        
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <!-- <h1>Welcome to CityNest</h1>
+                <p>Find your dream apartment with ease.</p> -->
+                <a href="apartments.php" class="btn">Explore Apartments</a>
+            </div>
+        </section>
+
+
+        <!-- Apartments -->
+        <div class="apts">
+            <h1> Apartments For Sale</h1>
+            <br>
+            <div class="apts-grid">
+
+                <a href="#"><div class="apts-card">
+                    <img src="images/APT1.jpg" alt="Apartment 1">
+                    <h2>Location</h2>
+                    <p>Description</p>
+                </div></a>
+                <a href="#"><div class="apts-card">
+                    <img src="images/APT2.jpg" alt="Apartment 2">
+                    <h2>Location</h2>
+                    <p>Description</p>
+                </div></a>
+                <a href="#"><div class="apts-card">
+                    <img src="images/APT3.jpg" alt="Apartment 3">
+                    <h2>Location</h2>
+                    <p>Description</p>
+                </div></a>
+                <a href="#"><div class="apts-card">
+                    <img src="images/APT4.jpg" alt="Apartment 4">
+                    <h2>Location</h2>
+                    <p>Description</p>
+                </div></a>
+                <a href="#"><div class="apts-card">
+                    <img src="images/APT5.jpg" alt="Apartment 5">
+                    <h2>Location</h2>
+                    <p>Description</p>
+                </div></a>
+                <a href="#"><div class="apts-card">
+                    <img src="images/APT6.webp" alt="Apartment 6">
+                    <h2>Location</h2>
+                    <p>Description</p>
+                </div></a>
+                <a href="#"><div class="apts-card">
+                    <img src="images/APT7.jpg" alt="Apartment 7">
+                    <h2>Location</h2>
+                    <p>Description</p>
+                </div></a>
+                <a href="#"><div class="apts-card">
+                    <img src="images/APT8.jpg" alt="Apartment 8">
+                    <h2>Location</h2>
+                    <p>Description</p>
+                </div></a>
+                                
+            </div>
+        </div>
+
+            
+        <!-- Testimonials -->
+        <div class="testimonial-container">
+            <h2 class="testimonial-title">What Our Customers Say</h2>
+            <div class="testimonial-slider">
+                <div class="testimonial-slide active">
+                    <p class="testimonial-quote">"Good location and apartment was comfortable but beware there is no lift"<br> &nbsp;</p>
+                    <h4 class="testimonial-author"> - Kusal Mendis</h4>
+                </div>
+                <div class="testimonial-slide">
+                    <p class="testimonial-quote">"Perfect location extremely well organised by host. There was nothing we didn't like"<br> &nbsp;</p>
+                    <h4 class="testimonial-author"> - Alexander Mahone</h4>
+                </div>
+                <div class="testimonial-slide">
+                    <p class="testimonial-quote">"The location was perfect - easy access to the town and local beaches, as well as having the most amazing views of the port."</p>
+                    <h4 class="testimonial-author">- Parami Dias</h4>
+                </div>
+                <div class="testimonial-slide">
+                    <p class="testimonial-quote">"Great service! I sold my apartment quickly through CityNest. Highly recommend."<br> &nbsp;</p>
+                    <h4 class="testimonial-author">- Mindy Silva</h4>
+                </div>
+                <div class="testimonial-slide">
+                    <p class="testimonial-quote">"CityNest has the best listings. I found the perfect place at an amazing price!"<br> &nbsp;</p>
+                    <h4 class="testimonial-author">- Sarah Mitchelle</h4>
+                </div>
+                <div class="testimonial-slide">
+                    <p class="testimonial-quote">"Had a great stay! The property was clean & the host was super communicative. Could not be in a better location!"</p>
+                    <h4 class="testimonial-author">- Nilanthi Peiris</h4>
+                </div>
+            </div>            
+            <!-- <div class="testimonial-navigation">
+                <button class="prev"> ❮ </button>
+                <button class="next"> ❯ </button>
+            </div> -->
+        </div>
+
+        <!-- Script slide Testimonials -->
+        <script>
+            let currentIndex = 0;
+            const slides = document.querySelectorAll('.testimonial-slide');
+            const totalSlides = slides.length;
+            
+            // Auto slide every 5 seconds
+            function showNextSlide() {
+                slides[currentIndex].classList.remove('active');
+                currentIndex = (currentIndex + 1) % totalSlides;
+                slides[currentIndex].classList.add('active');
+            }
+        
+            setInterval(showNextSlide, 5000); // 5000 ms = 5 seconds        
+            
+        </script>
+              
+
+
+
+        <!------------------- FOOTER ------------------->        
+        <div id="footer-placeholder"></div>
+
+        <script>
+            // to include the header   
+            fetch('footer.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('footer-placeholder').innerHTML = data;
+            });   
+        </script>
+
+
+
+    </body>
+</html>

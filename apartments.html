@@ -1,0 +1,180 @@
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CityNest</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles/footer.css">
+        <!-- <link rel="stylesheet" href="styles/styles.css"> -->
+        <link rel="stylesheet" href="styles/Location.css">
+        <link rel="stylesheet" href="styles/apt.css">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+        <style>
+
+            h4 {
+                color: black;
+            }
+
+
+            
+        </style>
+
+    </head>
+
+    <body>
+        <!------------------- NAVIGATION ------------------->        
+        <div id="header-placeholder"></div>
+
+        <script>
+            // to include the header   
+            fetch('header.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('header-placeholder').innerHTML = data;
+            });   
+        </script>
+        
+
+        <!-- <h1>Apartments</h1> --> 
+         
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Welcome to CityNest</h1>
+                <h3>Find your dream apartment with ease</h3>
+            </div>
+        </section>
+
+
+        <!-- Added Apartments -->
+        
+
+        <!-- Top Cities -->
+		<center>
+        <a href="#Colombo"><button class="location-button" onclick="loadData('btn1')">Colombo</button></a>
+        <a href="#Dehiwala"><button class="location-button" onclick="loadData('btn2')">Dehiwala</button></a>
+        <a href="#Negombo"><button class="location-button" onclick="loadData('btn3')">Negombo</button></a>
+        <!-- <a href="#Nugegoda"><button class="location-button" onclick="loadData('btn4')">Nugegoda</button></a>
+        <a href="#Wattala"><button class="location-button" onclick="loadData('btn5')">Wattala</button></a> -->
+        </center>
+		<br>
+
+
+        <section id="Trending">
+            <h2 class="listh2">TRENDING</h2>
+            <div class="image-container">
+                <ul>
+                    <li>
+                        <img src="images/APT1.jpg" alt="Trending image1">
+                        <p><strong>COLOMBO</strong><br>Waterdale Residencies for Sale</p>
+                    </li>
+                    <li>
+                        <img src="images/APT8.jpg" alt="Trending image3">
+                        <p><strong>Dehiwala</strong><br>Oceana Beach Resort Apartments for Sale</p>
+                    </li>
+                    <li>
+                        <img src="images/APT3.jpg" alt="Trending image3">
+                        <p><strong>Negombo</strong><br>Oceana Beach Resort Apartments for Sale</p>
+                    </li>
+                    <li>
+                        <img src="images/APT4.jpg" alt="Trending image4">
+                        <p><strong>Nugegoda</strong><br>Waterdale Residencies for Sale</p>
+                    </li>                    
+                </ul>
+            </div>
+        </section>
+
+
+        <section id="Colombo">
+            <h2 class="listh2">Colombo</h2>
+            <div class="image-container">
+                <ul>
+                    <li>
+                        <img src="images/APT1.jpg" alt="Trending image1">
+                        <p><strong>COLOMBO</strong><br>Waterdale Residencies for Sale</p>
+                    </li>
+                    <li>
+                        <img src="images/APT3.jpg" alt="Trending image3">
+                        <p><strong>Dehiwala</strong><br>OWaterdale Residencies for Sale</p>
+                    </li>
+                    <li>
+                        <img src="images/APT6.webp" alt="Trending image3">
+                        <p><strong>Negombo</strong><br>Oceana Beach Resort Apartments for Sale</p>
+                    </li>
+                    <li>
+                        <img src="images/APT4.jpg" alt="Trending image4">
+                        <p><strong>Nugegoda</strong><br>Waterdale Residencies for Sale</p>
+                    </li>                    
+                </ul>
+            </div>
+        </section>
+
+
+        <section id="Dehiwala">
+            <h2 class="listh2">Dehiwala</h2>
+            <div class="image-container">
+                <ul>
+                    <li>
+                        <img src="images/APT1.jpg" alt="Trending image1">
+                        <p><strong>COLOMBO</strong><br>Waterdale Residencies for Sale</p>
+                    </li>
+                    <li>
+                        <img src="images/APT3.jpg" alt="Trending image3">
+                        <p><strong>Dehiwala</strong><br>OWaterdale Residencies for Sale</p>
+                    </li>
+                    <li>
+                        <img src="images/APT6.webp" alt="Trending image3">
+                        <p><strong>Negombo</strong><br>Oceana Beach Resort Apartments for Sale</p>
+                    </li>
+                    <li>
+                        <img src="images/APT4.jpg" alt="Trending image4">
+                        <p><strong>Nugegoda</strong><br>Waterdale Residencies for Sale</p>
+                    </li>                    
+                </ul>
+            </div>
+        </section>
+
+        <section id="Negombo"></section>
+            <h2 class="listh2">Negombo</h2>
+            <div class="image-container">
+                <ul>
+                    <li>
+                        <img src="images/APT1.jpg" alt="Trending image1">
+                        <p><strong>COLOMBO</strong><br>Waterdale Residencies for Sale</p>
+                    </li>
+                    <li>
+                        <img src="images/APT3.jpg" alt="Trending image3">
+                        <p><strong>Dehiwala</strong><br>OWaterdale Residencies for Sale</p>
+                    </li>
+                    <li>
+                        <img src="images/APT6.webp" alt="Trending image3">
+                        <p><strong>Negombo</strong><br>Oceana Beach Resort Apartments for Sale</p>
+                    </li>
+                    <li>
+                        <img src="images/APT4.jpg" alt="Trending image4">
+                        <p><strong>Nugegoda</strong><br>Waterdale Residencies for Sale</p>
+                    </li>                    
+                </ul>
+            </div>
+        </section>
+
+        
+
+        <!------------------- FOOTER ------------------->        
+        <div id="footer-placeholder"></div>
+
+        <script>
+            // to include the header   
+            fetch('footer.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('footer-placeholder').innerHTML = data;
+            });   
+        </script>
+        
+        
+    </body>
+</html>

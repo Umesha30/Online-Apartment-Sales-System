@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CityNest</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles/footer.css">
+        <link rel="stylesheet" href="styles/styles.css">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    </head>
+
+    <body>
+        <div id="header-placeholder"></div>
+
+        <script>
+            // to include the header   
+            fetch('header.html')
+                .then(response => response.text())
+                .then(data => {
+                     document.getElementById('header-placeholder').innerHTML = data;
+                });   
+        </script>
+
+        
+        <br>
+        <div class="terms">
+            <br>
+            <h1>Terms and Conditions</h1>
+            <br>
+            <p>CityNest.com is an open venue for advertisers to post any advertisement related 
+                to property sales/lettings in Sri Lanka. The website CityNest.com (the "Website") 
+                is owned and operated by CityNest (Pvt) Ltd ("we" or "us"). We are not involved 
+                in the content of the advertisements, the products or services being sold through the advertisements,
+                or actual transactions between buyers and sellers through the advertisements. 
+                Therefore, we have no control over the quality, safety or legality of the items offered, 
+                the truth or accuracy of the listings.
+                Our main service is listing the advertisements posted by advertisers. 
+                Contacting an advertiser or reserving their services will be at your own discretion. 
+                Once you have contacted the advertiser directly via email or telephone, 
+                your contact with CityNest.com will cease to exist. 
+            </p>
+            <p>
+                CityNest.com reserves the right (but not the obligation) in our sole discretion to 
+                refuse/delete/remove any advert for any reason or no reason. Such action will be taken mainly 
+                on adverts that violate the Terms and Conditions, use inappropriate language or spam the site. 
+            </p>
+            <p>
+                Any dispute that arises in connection with the reservation/purchase or sale of services/products 
+                which were displayed on CityNest.com is solely between the Buyer (person who purchased the 
+                service directly from the Seller) and Seller (person who sold/offered the service directly to the Buyer).
+                We will not mediate any such dispute between Buyer and Seller, and cannot be held liable for any claim of loss,
+                damages or wrongdoing on behalf of either the Buyer or Seller. 
+            </p>
+            <p>
+                CityNest.com does not vet the advertisers, guarantee their services or are responsible for services provided by the advertisers. 
+            </p>
+            <p>
+                In no event will CityNest.com or its parent company be liable for any indirect / consequential / special / incidental 
+                or punitive damages, including without limitation liability for negligence for any damages whatsoever resulting 
+                from any use of or inability to use this web site, loss of profit, loss of data, arising out of, based on, 
+                or resulting from this agreement or your use of the service, even if 
+                CityNest.com has been advised of the possibility of such damages. 
+                <b>CityNest.com cannot be held liable for any contents on the website. </b>
+            </p>
+        </div>
+
+        <!-- FOOTER -->
+        <br><br>
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="apartments.html">Apartments</a></li>
+                            <li><a href="sellers.html">Sellers</a></li>
+                            <li><a href="aboutus.html">About Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Get Help</h4>
+                        <ul>
+                            <li><a href="FAQ.php">FAQ</a></li>
+                            <li><a href="privacy&P.html">Privacy Policy</a></li>
+                            <li><a href="terms&C.html">Terms & Conditions</a></li>
+                            <li><a href="references.php">References</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Contact Us</h4>
+                        <ul>
+                            <li><a href="contactus.html">Mobile</a></li>
+                            <li><a href="contactus.html">E - mail</a></li>
+                            <li><a href="contactus.html">Address</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Follow Us</h4>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.youtube.com/channel/UC5rvMJhPcnLun-0cUWBha6Q" target="_blank"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+        <!-- Footer-->
+        <div class="footerbottom">
+            <p>&copy; 2024 CityNest. All Rights Reserved.</p>
+        </div>
+    </body>
+</html>
